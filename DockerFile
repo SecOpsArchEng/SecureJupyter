@@ -1,0 +1,7 @@
+FROM alpine:3.7
+
+COPY harden.sh /usr/sbin/harden.sh
+
+RUN apk add py3-pip
+
+RUN pip3 install jupyter
